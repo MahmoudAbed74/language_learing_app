@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'package:language_learing_app/Screens/NumbersPage.dart';
 import 'package:language_learing_app/components/CatergoryLanguage.dart';
 
 class HomePage extends StatelessWidget {
@@ -15,7 +16,16 @@ class HomePage extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Catergory(catergoryColor: 0xFF5885AF, textcatergory: "Numbers"),
+          Catergory(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: ((BuildContext context) {
+                return const NumbersPage();
+              })));
+            },
+            catergoryColor: 0xFF5885AF,
+            textcatergory: "Numbers",
+          ),
           Catergory(
             catergoryColor: 0xFFC3E0E5,
             textcatergory: "Fmaily Members",
