@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-// ignore: must_be_immutable
+import 'package:language_learing_app/models/Number.dart';
 class Catergory extends StatelessWidget {
   Catergory({this.catergoryColor, this.textcatergory, this.onTap, super.key});
   int? catergoryColor;

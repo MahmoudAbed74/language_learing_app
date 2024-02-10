@@ -5,42 +5,58 @@ import 'package:language_learing_app/models/Number.dart';
 
 class NumbersPage extends StatelessWidget {
   const NumbersPage({super.key});
-  final Number one = const Number(
-      imgPath: "assets/images/numbers/number_one.png",
-      textJanpanies: "Icho",
-      textEnglish: "one",
-      sound: "sound");
+
   final List<Number> numbers = const [
     Number(
         imgPath: "assets/images/numbers/number_one.png",
         textJanpanies: "Icho",
         textEnglish: "one",
-        sound: "sound"),
+        sound: "sounds/numbers/number_one_sound.mp3"),
     Number(
-        imgPath: "assets/images/numbers/number_one.png",
+        imgPath: "assets/images/numbers/number_two.png",
         textJanpanies: "Icho",
-        textEnglish: "one",
-        sound: "sound"),
+        textEnglish: "two",
+        sound: "sounds/numbers/number_two_sound.mp3"),
     Number(
-        imgPath: "assets/images/numbers/number_one.png",
+        imgPath: "assets/images/numbers/number_three.png",
         textJanpanies: "Icho",
-        textEnglish: "one",
-        sound: "sound"),
+        textEnglish: "three",
+        sound: "sounds/numbers/number_three_sound.mp3"),
     Number(
-        imgPath: "assets/images/numbers/number_one.png",
+        imgPath: "assets/images/numbers/number_four.png",
         textJanpanies: "Icho",
-        textEnglish: "one",
-        sound: "sound"),
+        textEnglish: "four",
+        sound: "sounds/numbers/number_four_sound.mp3"),
     Number(
-        imgPath: "assets/images/numbers/number_one.png",
+        imgPath: "assets/images/numbers/number_five.png",
         textJanpanies: "Icho",
-        textEnglish: "one",
-        sound: "sound"),
+        textEnglish: "five",
+        sound: "sounds/numbers/number_five_sound.mp3"),
     Number(
-        imgPath: "assets/images/numbers/number_one.png",
+        imgPath: "assets/images/numbers/number_six.png",
         textJanpanies: "Icho",
-        textEnglish: "one",
-        sound: "sound"),
+        textEnglish: "six",
+        sound: "sounds/numbers/number_six_sound.mp3"),
+    Number(
+        imgPath: "assets/images/numbers/number_seven.png",
+        textJanpanies: "Icho",
+        textEnglish: "seven",
+        sound: "sounds/numbers/number_seven_sound.mp3"),
+    Number(
+        imgPath: "assets/images/numbers/number_eight.png",
+        textJanpanies: "Icho",
+        textEnglish: "eight",
+        sound: "sounds/numbers/number_eight_sound.mp3"),
+    Number(
+        imgPath: "assets/images/numbers/number_nine.png",
+        textJanpanies: "Icho",
+        textEnglish: "nine",
+        sound: "sounds/numbers/number_nine_sound.mp3"),
+    Number(
+        imgPath: "assets/images/numbers/number_ten.png",
+        textJanpanies: "Icho",
+        textEnglish: "ten",
+        sound: "sounds/numbers/number_ten_sound.mp3"),
   ];
   @override
   Widget build(BuildContext context) {
@@ -54,7 +70,6 @@ class NumbersPage extends StatelessWidget {
           itemCount: numbers.length,
           itemBuilder: (context, index) {
             return NumbersItem(number: numbers[index]);
-            ;
           },
         ));
   }
