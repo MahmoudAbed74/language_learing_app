@@ -48,7 +48,7 @@ class PharasesPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("Numbers Page"),
+          title: const Text("Pharases Page"),
           centerTitle: true,
           backgroundColor: Colors.brown,
         ),

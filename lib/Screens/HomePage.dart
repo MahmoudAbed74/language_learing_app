@@ -51,6 +51,16 @@ class HomePage extends StatelessWidget {
             textcatergory: "Colors",
           ),
           Catergory(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return const PharasesPage();
+                  },
+                ),
+              );
+            },
             catergoryColor: 0xFFC3E0E5,
             textcatergory: "phrases",
           ),

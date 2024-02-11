@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:language_learing_app/Screens/PharasesPage.dart';
+import 'package:language_learing_app/Screens/HomePage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,6 +12,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: PharasesPage());
+    return const MaterialApp(home: HomePage());
   }
 }
