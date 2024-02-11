@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'package:language_learing_app/Screens/ColorPage.dart';
 import 'package:language_learing_app/Screens/NumbersPage.dart';
 import 'package:language_learing_app/Screens/fmaily%20Members.dart';
 import 'package:language_learing_app/components/CatergoryLanguage.dart';
@@ -38,6 +39,13 @@ class HomePage extends StatelessWidget {
             textcatergory: "Fmaily Members",
           ),
           Catergory(
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(
+                builder: (context) {
+                  return const ColorPage();
+                },
+              ));
+            },
             catergoryColor: 0xFF5885AF,
             textcatergory: "Colors",
           ),
