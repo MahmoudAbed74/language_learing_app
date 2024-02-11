@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:language_learing_app/Screens/ColorPage.dart';
 import 'package:language_learing_app/Screens/NumbersPage.dart';
+import 'package:language_learing_app/Screens/PharasesPage.dart';
 import 'package:language_learing_app/Screens/fmaily%20Members.dart';
 import 'package:language_learing_app/components/CatergoryLanguage.dart';
 
