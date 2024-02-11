@@ -2,53 +2,54 @@ import 'package:flutter/material.dart';
 
 import 'package:audioplayers/audioplayers.dart';
 
-import 'package:language_learing_app/models/number.dart';
+import 'package:language_learing_app/models/color.dart';
 
-class NumbersItem extends StatelessWidget {
-  const NumbersItem({required this.number, super.key});
-  final Number number;
+class ColorItem extends StatelessWidget {
+  const ColorItem({super.key, required this.color});
+  final ColorModel color;
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 80,
       width: double.infinity,
-      color: Colors.amberAccent,
+      height: 80,
+      color: Colors.amber,
       child: Row(
         children: [
-          Image.asset(number.imgPath),
+          Image.asset(color.imgPath),
           const Spacer(
-            flex: 1,
+            flex: 2,
           ),
           Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                number.textJanpanies,
+                color.textJanpanies,
                 style: const TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               Text(
-                number.textEnglish,
+                color.textEnglish,
                 style: const TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
-              )
+              ),
             ],
           ),
           const Spacer(
-            flex: 1,
+            flex: 2,
           ),
           IconButton(
               onPressed: () {
                 final player = AudioPlayer();
-                player.play(AssetSource(number.sound));
+                player.play(AssetSource(color.sound));
               },
               icon: const Icon(Icons.play_arrow)),
-          const SizedBox(
-            width: 20,
-          )
+          const Spacer(
+            flex: 1,
+          ),
         ],
       ),
     );

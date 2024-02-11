@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:language_learing_app/components/numbersItems.dart';
-import 'package:language_learing_app/models/Number.dart';
+import 'package:language_learing_app/models/number.dart';
 
 class NumbersPage extends StatelessWidget {
   const NumbersPage({super.key});
