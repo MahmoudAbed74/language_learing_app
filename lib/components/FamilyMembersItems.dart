@@ -12,7 +12,7 @@ class FamilyMembersItems extends StatelessWidget {
     return Container(
       width: double.infinity,
       height: 80,
-      color: Colors.amber,
+      color: const Color(0xFFC3E0E5),
       child: Row(
         children: [
           Image.asset(familyMembers.imgFamily),

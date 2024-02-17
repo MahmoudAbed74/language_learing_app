@@ -11,45 +11,43 @@ class PharasesItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+        alignment: Alignment.topLeft,
         height: 80,
-        width: double.infinity,
-        color: Colors.amberAccent,
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10),
-          child: Row(
-            children: [
-              Column(
-                children: [
-                  Text(
-                    pharases.textJanpanies,
-                    style: const TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                    ),
+        color: const Color(0xFFC3E0E5),
+        child: Row(
+          children: [
+            const SizedBox(
+              width: 10,
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  pharases.textJanpanies,
+                  style: const TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
                   ),
-                  Text(
-                    pharases.textEnglish,
-                    style: const TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  )
-                ],
-              ),
-              const Spacer(
-                flex: 1,
-              ),
-              IconButton(
-                  onPressed: () {
-                    final player = AudioPlayer();
-                    player.play(AssetSource(pharases.sound));
-                  },
-                  icon: const Icon(Icons.play_arrow)),
-              const SizedBox(
-                width: 20,
-              )
-            ],
-          ),
+                ),
+                Text(
+                  pharases.textEnglish,
+                  style: const TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
+                )
+              ],
+            ),
+            const Spacer(
+              flex: 3,
+            ),
+            IconButton(
+                onPressed: () {
+                  final player = AudioPlayer();
+                  player.play(AssetSource(pharases.sound));
+                },
+                icon: const Icon(Icons.play_arrow)),
+          ],
         ));
   }
 }

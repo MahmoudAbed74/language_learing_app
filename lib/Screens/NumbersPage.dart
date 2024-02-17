@@ -14,47 +14,47 @@ class NumbersPage extends StatelessWidget {
         sound: "sounds/numbers/number_one_sound.mp3"),
     Number(
         imgPath: "assets/images/numbers/number_two.png",
-        textJanpanies: "Icho",
+        textJanpanies: "ni",
         textEnglish: "two",
         sound: "sounds/numbers/number_two_sound.mp3"),
     Number(
         imgPath: "assets/images/numbers/number_three.png",
-        textJanpanies: "Icho",
+        textJanpanies: "san",
         textEnglish: "three",
         sound: "sounds/numbers/number_three_sound.mp3"),
     Number(
         imgPath: "assets/images/numbers/number_four.png",
-        textJanpanies: "Icho",
+        textJanpanies: "Shi",
         textEnglish: "four",
         sound: "sounds/numbers/number_four_sound.mp3"),
     Number(
         imgPath: "assets/images/numbers/number_five.png",
-        textJanpanies: "Icho",
+        textJanpanies: "go",
         textEnglish: "five",
         sound: "sounds/numbers/number_five_sound.mp3"),
     Number(
         imgPath: "assets/images/numbers/number_six.png",
-        textJanpanies: "Icho",
+        textJanpanies: "roku",
         textEnglish: "six",
         sound: "sounds/numbers/number_six_sound.mp3"),
     Number(
         imgPath: "assets/images/numbers/number_seven.png",
-        textJanpanies: "Icho",
+        textJanpanies: "nana",
         textEnglish: "seven",
         sound: "sounds/numbers/number_seven_sound.mp3"),
     Number(
         imgPath: "assets/images/numbers/number_eight.png",
-        textJanpanies: "Icho",
+        textJanpanies: "hachi",
         textEnglish: "eight",
         sound: "sounds/numbers/number_eight_sound.mp3"),
     Number(
         imgPath: "assets/images/numbers/number_nine.png",
-        textJanpanies: "Icho",
+        textJanpanies: "ku",
         textEnglish: "nine",
         sound: "sounds/numbers/number_nine_sound.mp3"),
     Number(
         imgPath: "assets/images/numbers/number_ten.png",
-        textJanpanies: "Icho",
+        textJanpanies: "juu",
         textEnglish: "ten",
         sound: "sounds/numbers/number_ten_sound.mp3"),
   ];
@@ -64,7 +64,7 @@ class NumbersPage extends StatelessWidget {
         appBar: AppBar(
           title: const Text("Numbers Page"),
           centerTitle: true,
-          backgroundColor: Colors.brown,
+          backgroundColor: const Color(0xFF41729F),
         ),
         body: ListView.builder(
           itemCount: numbers.length,

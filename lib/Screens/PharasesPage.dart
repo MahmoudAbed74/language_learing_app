@@ -8,23 +8,23 @@ class PharasesPage extends StatelessWidget {
 
   final List<Pharases> pharasesList = const [
     Pharases(
-        textJanpanies: " ",
+        textJanpanies: "Kimasu ka?",
         textEnglish: "Are you coming?",
         sound: "sounds/phrases/are_you_coming.wav"),
     Pharases(
-        textJanpanies: " ",
+        textJanpanies: "Kōdoku suru koto o wasurenaide kudasai?",
         textEnglish: "Don't forget to subscribe ?",
         sound: "sounds/phrases/dont_forget_to_subscribe.wav"),
     Pharases(
-        textJanpanies: " ",
+        textJanpanies: "Go kibun wa ikagadesu ka?",
         textEnglish: "How are you feeling?",
         sound: "sounds/phrases/how_are_you_feeling.wav"),
     Pharases(
-        textJanpanies: " ",
+        textJanpanies: "Watashi wa anime ga daisukidesu",
         textEnglish: "I love anime",
         sound: "sounds/phrases/i_love_anime.wav"),
     Pharases(
-        textJanpanies: " ",
+        textJanpanies: "Puroguramingu ga daisukidesu",
         textEnglish: "I love programming",
         sound: "sounds/phrases/i_love_programming.wav"),
     Pharases(
@@ -32,15 +32,15 @@ class PharasesPage extends StatelessWidget {
         textEnglish: "Programming is easy",
         sound: "sounds/phrases/programming_is_easy.wav"),
     Pharases(
-        textJanpanies: " ",
+        textJanpanies: "Puroguramingu wa kantandesu",
         textEnglish: "where are you going?",
         sound: "sounds/phrases/where_are_you_going.wav"),
     Pharases(
-        textJanpanies: " ",
+        textJanpanies: "Hai, ikimasu",
         textEnglish: "yes, i'm coming",
         sound: "sounds/phrases/yes_im_coming.wav"),
     Pharases(
-        textJanpanies: " ",
+        textJanpanies: "Anata no namae wa nanidesu ka?",
         textEnglish: "What is your name? ",
         sound: "sounds/phrases/what_is_your_name.wav"),
   ];
@@ -50,7 +50,7 @@ class PharasesPage extends StatelessWidget {
         appBar: AppBar(
           title: const Text("Pharases Page"),
           centerTitle: true,
-          backgroundColor: Colors.brown,
+          backgroundColor: const Color(0xFF41729F),
         ),
         body: ListView.builder(
           itemCount: pharasesList.length,

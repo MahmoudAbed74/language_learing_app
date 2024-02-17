@@ -12,7 +12,7 @@ class ColorItem extends StatelessWidget {
     return Container(
       width: double.infinity,
       height: 80,
-      color: Colors.amber,
+      color: const Color(0xFF5885AF),
       child: Row(
         children: [
           Image.asset(color.imgPath),

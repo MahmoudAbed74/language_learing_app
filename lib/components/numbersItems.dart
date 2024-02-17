@@ -12,7 +12,7 @@ class NumbersItem extends StatelessWidget {
     return Container(
       height: 80,
       width: double.infinity,
-      color: Colors.amberAccent,
+      color: const Color(0xFF5885AF),
       child: Row(
         children: [
           Image.asset(number.imgPath),
