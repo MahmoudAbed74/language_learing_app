@@ -12,7 +12,8 @@ Multiple Learning Sections: Dive into various aspects of the Japanese language, 
  # Interactive Learning:
  Engage with reading materials and audio content to reinforce your understanding.
 
-# Cross-Platform Compatibility: Enjoy the app on both Android and iPhone devices for convenience and accessibility.
+# Cross-Platform Compatibility:
+Enjoy the app on both Android and iPhone devices for convenience and accessibility.
 
 # Getting Started
 To get started with Language Learning App, follow these simple steps:
